@@ -1,0 +1,48 @@
+/* css css responsive-calc.css   */
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+</style>
+
+/* practice good semantic */
+
+* {
+   font-family: "Roboto", sans-serif;
+}
+body {
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+}
+
+*  {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box
+} 
+
+.container {
+   position: relative;
+   width: 1000px;
+   height: 200px;
+   display: flex;
+   background: #ccc;
+}
+ 
+.container .box {
+   position: relative;
+/* calculate window  resize when widow 
+is smaller , nice adjustment */
+   min-width: calc(calc(100% / 5) - 20px );
+   height: calc(100% - 20px);
+   background: #000;
+   margin: 10px 10px 10px 10px;
+}
+
+.box2 {
+   position: rellative;
+   width: 200px;
+   height: 200px;
+   background: #000;
+}
